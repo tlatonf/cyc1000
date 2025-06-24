@@ -1,15 +1,27 @@
 # Copyright (c) 2025 Tlatonf
 
 # PIN ASSIGNMENTS FOR ARROW CYC1000 BOARD
+# Board Status Elements
+set_location_assignment PIN_L15 -to LED_3V3
+set_location_assignment PIN_J2  -to LED_CONF_DONE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_CONF_DONE
+
+# Clock Circuitry
+set_location_assignment PIN_E15 -to CLK_X
+set_location_assignment PIN_M2  -to CLK12M
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK_X
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK12M
+
 # LEDs
-set_location_assignment PIN_M6 -to LED[7]
-set_location_assignment PIN_T4 -to LED[6]
-set_location_assignment PIN_T3 -to LED[5]
-set_location_assignment PIN_R3 -to LED[4]
-set_location_assignment PIN_T2 -to LED[3]
-set_location_assignment PIN_R4 -to LED[2]
-set_location_assignment PIN_N5 -to LED[1]
-set_location_assignment PIN_R3 -to LED[0]
+set_location_assignment PIN_N3 -to LED[7]
+set_location_assignment PIN_N5 -to LED[6]
+set_location_assignment PIN_R4 -to LED[5]
+set_location_assignment PIN_T2 -to LED[4]
+set_location_assignment PIN_R3 -to LED[3]
+set_location_assignment PIN_T3 -to LED[2]
+set_location_assignment PIN_T4 -to LED[1]
+set_location_assignment PIN_M6 -to LED[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
